@@ -16,7 +16,7 @@
 	/tmpl/c.js
 	/tmpl/template.js
 
-##配置方式：
+## 配置方式：
 
 	//fis.conf
 	fis.match('::package', {
@@ -24,3 +24,26 @@
 	});
 
 
+# 组合使用方式
+
+## 安装
+
+	npm i fis3-parser-dot-compiler
+	npm i fis3-prepackager-dot-compiler
+
+## 配置
+
+	//fis.conf
+	fis.match('*.dot', {
+		parser: fis.plugin('dot-compiler'),
+		rExt: '.js'
+	})
+
+        fis.match('::package', {
+                prepackager: fis.plugin('dot-compiler')
+        });
+
+
+## 引用
+
+可以在js文件中引用，也可以在html中引用。

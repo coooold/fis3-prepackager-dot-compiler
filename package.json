@@ -1,7 +1,7 @@
 {
     "name" : "fis3-prepackager-dot-compiler",
-    "description" : "doT.js的fis3编译模板收集打包处理",
-    "version" : "0.0.3",
+    "description" : "配合fis3-parser-dot-compiler使用的，doT.js的fis3编译模板收集打包处理插件",
+    "version" : "0.0.4",
     "author": {
         "name": "coooold",
         "email": "coooold@outlook.com",
